@@ -1,47 +1,53 @@
-*{
+* {
     font-size: 16px;
     font-family: Comic Sans MS, Comic Sans, cursive;
-
 }
 
 
 /******Desktop******/
-.title{
-    text-align:center;
+
+.title {
+    text-align: center;
     margin: 20px;
     font-size: 1.5em;
 }
 
-p{
+p {
     padding: 0px 5px;
 }
 
-.big-div{
-    display: flex;
-    flex-wrap: wrap;
-}
+.big-div {}
 
-.menu{
+.menu1,
+.menu2,
+.menu3 {
     background-color: grey;
     border: 2px black solid;
     margin: 10px;
     max-width: 30%;
+    display: inline-block;
 }
 
-.menu__1, .menu__2, .menu__3{
+.menu__1,
+.menu__2,
+.menu__3 {
     font-weight: 800;
 }
 
-.menu__1{
+.menu__1 {
+    background-color: rgb(230, 138, 138);
     background-color: rgb(235, 157, 157);
     display: inline-block;
     position: sticky;
+    left: 80%;
+    bottom: 0%;
     left: 100%;
     bottom: 100%;
 }
 
-.menu__1 p{
+.menu__1 p {
     font-size: 20px;
+    padding: 3px;
     padding: 3px 20px;
     margin: 0px;
     border: black solid 2px;
@@ -49,7 +55,7 @@ p{
     border-right: 0px;
 }
 
-.menu__2{
+.menu__2 {
     background-color: rgba(233, 10, 10, 0.733);
     display: inline-block;
     position: sticky;
@@ -58,7 +64,7 @@ p{
     color: white;
 }
 
-.menu__2 p{
+.menu__2 p {
     font-size: 20px;
     padding: 3px 20px;
     margin: 0px;
@@ -67,7 +73,7 @@ p{
     border-right: 0px;
 }
 
-.menu__3{
+.menu__3 {
     background-color: rgb(235, 230, 157);
     display: inline-block;
     position: sticky;
@@ -75,7 +81,7 @@ p{
     bottom: 100%;
 }
 
-.menu__3 p{
+.menu__3 p {
     font-size: 20px;
     padding: 3px 20px;
     margin: 0px;
@@ -84,17 +90,26 @@ p{
     border-right: 0px;
 }
 
+
 /*****Tablet*****/
 
-@media (max-width: 991px){
-
-    
-    .menu:nth-child(2), .menu:nth-child(1){
-        min-width: 50%;
+@media (max-width: 991px) {
+    .menu2,
+    .menu1 {
+        min-width: 46.3%;
     }
-    
-    .menu:nth-child(3){
-        min-width: 80%;
-        max-height: 233px;
+    .menu3 {
+        min-width: 96%;
+    }
+}
+
+
+/****Phone****/
+
+@media (max-width: 767px) {
+    .menu1,
+    .menu2,
+    .menu3 {
+        min-width: 96%;
     }
 }
