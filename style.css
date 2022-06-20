@@ -1,4 +1,35 @@
 *{
     font-size: 16px;
-    font-family: sans-serif;
+
+}
+
+.title{
+    text-align:center;
+    margin: 20px;
+}
+
+.big-div{
+    display: flex;
+}
+
+.menu{
+    background-color: grey;
+    border: 2px black solid;
+    margin: 10px;
+}
+
+.menu__1{
+    background-color: rgb(230, 138, 138);
+    display: inline-block;
+    position: sticky;
+    left: 80%;
+    bottom: 0%;
+
+}
+
+.menu__1 p{
+    font-size: 20px;
+    padding: 3px;
+    margin: 0px;
+    border: black solid 2px;
 }
